@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/css/site.css">
+    <title>Pet Care</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><img class="logo" src="./static/images/paw.svg"></li>
+            <li class="title">Animal Care</li>
+            <li><a href="./home_with_sick_and_cured.html">Home</a></li>
+            <li><a href="./create.html">Add Animal</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+
+        <h1>Add Animal</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-group">
+                <label for="name">Animal Name</label>
+                {{ form.name }}
+            </div>
+            <div class="input-group">
+                <label for="image">Animal Picture</label>
+                {{ form.image_url }}
+            </div>
+            <div class="input-group">
+                <label for="description">Animal Description</label>
+                {{ form.description }}
+            </div>
+            <div class="input-group">
+                <label for="priority">Animal Priority</label>
+                {{ form.priority }}
+
+            </div>
+            <div class="input-group">
+                <input class="button primary" type="submit" value="Add">
+            </div>
+        </form>
+
+    </div>
+    <footer> Python Web Basics Retake Exam @SoftUni </footer>
+
+</body>
+
+</html>

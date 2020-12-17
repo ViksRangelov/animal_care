@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* NAVIGATION */
+
+img.logo {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    background: #d92027;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+}
+
+nav ul li {
+    padding: 5px;
+    list-style: none;
+    align-self: center;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li.title {
+    font-size: 30px;
+}
+
+
+/* INDEX */
+
+h1,
+h2 {
+    text-align: center;
+}
+
+div.content {
+    display: block;
+    width: 100%;
+}
+
+
+/* BUTTONS */
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+}
+
+.buttons-container {
+    display: grid;
+}
+
+.buttons-container.small {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.button.primary {
+    background: #6cda5e;
+}
+
+.button.primary:hover {
+    background: #5bb64f;
+}
+
+.button.edit {
+    background: #daaf5e;
+}
+
+.button.edit:hover {
+    background: #c09a53;
+}
+
+.button.delete {
+    background: #da625e;
+}
+
+.button.delete:hover {
+    background: #b1504c;
+}
+
+.button.cure {
+    background: #6cda5e;
+}
+
+.button.cure:hover {
+    background: #5bb64f;
+}
+
+.button.details {
+    background: #5ea2da;
+}
+
+.button.details:hover {
+    background: #508ab9;
+}
+
+
+/* FORM */
+
+form {
+    display: block;
+}
+
+div.input-group {
+    padding: 10px;
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.input-group label {
+    padding: 5px;
+}
+
+div.input-group input[type=text],
+div.input-group input[type=url],
+div.input-group textarea,
+div.input-group select {
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #d92027;
+}
+
+div.input-group input:focus,
+div.input-group textarea:focus,
+div.input-group select:focus {
+    outline: none;
+}
+
+
+/* ANIMAL */
+
+div.animals-container {
+    margin: 10px;
+    display: flex;
+}
+
+div.animal-card {
+    margin: 10px;
+    width: 10%;
+    -webkit-box-shadow: 7px 8px 28px 2px rgba(0, 0, 0, 0.86);
+    box-shadow: 7px 8px 28px 2px rgba(0, 0, 0, 0.86);
+}
+
+div.animal-card.big {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+}
+
+div.animal-card img {
+    display: block;
+    width: -webkit-fill-available;
+    height: auto;
+    height: 150px;
+    margin: 0 auto;
+}
+
+div.animal-card.big img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+div.animal-card h3 {
+    margin-left: 5px;
+}
+
+div.animal-card p {
+    margin-left: 5px;
+}
+
+div.animal-card p.priority {
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+div.animal-card p.low {
+    background: #ffcd3c;
+}
+
+div.animal-card p.medium {
+    background: #ff9234;
+}
+
+div.animal-card p.high {
+    background: #d92027;
+}
+
+div.animal-card p.cured {
+    background: #1ab649;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #d92027;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

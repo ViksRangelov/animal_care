@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/site.css">
+    <title>Pet Care</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><img class="logo" src="/static/images/paw.svg"></li>
+            <li class="title">Animal Care</li>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'create animal' %}">Add Animal</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+
+        <h1>Animal Details</h1>
+        <div class="animal-card big">
+            <img src="{{ form.image_url }}">
+            <h3>{{ form.title }}</h3>
+            <p class="{{ form.priority }}">high</p>
+            <p>{{ form.description }}</p>
+            <div class="buttons-container">
+                <a class="button edit" href="{% url 'edit animal' animal.pk %}">Edit</a>
+                <a class="button cure" href="{% url 'cure animal' animal.pk %}">Cure</a>
+            </div>
+        </div>
+
+    </div>
+    <footer> Python Web Basics Retake Exam @SoftUni </footer>
+
+</body>
+
+</html>
