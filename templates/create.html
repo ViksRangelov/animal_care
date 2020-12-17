@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./static/css/site.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/site.css">
     <title>Pet Care</title>
 </head>
 
@@ -11,10 +11,10 @@
 
     <nav>
         <ul>
-            <li><img class="logo" src="./static/images/paw.svg"></li>
+            <li><img class="logo" src="/static/images/paw.svg"></li>
             <li class="title">Animal Care</li>
-            <li><a href="./home_with_sick_and_cured.html">Home</a></li>
-            <li><a href="./create.html">Add Animal</a></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'create animal' %}">Add Animal</a></li>
         </ul>
     </nav>
     <div class="content">
